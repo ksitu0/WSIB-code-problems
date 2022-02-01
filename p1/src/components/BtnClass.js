@@ -7,10 +7,10 @@ class BtnClass extends React.Component {
   }
 
   render() {
-    var handleClick = this.props.onClick;
+    let handleClick = this.props.onClick;
     return (
       <button 
-        onClick={()=>handleClick(this.props.name)}
+        onClick={()=>handleClick(this.props.name)} // passing name from props
         // color to override default style
         style={{...this.props.style, 
                 backgroundColor: this.props.color}}/>
